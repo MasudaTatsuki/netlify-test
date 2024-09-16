@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Layout>
       <h1>お問合せ</h1>
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <div>
           <label>お名前: <input type="text" name="name" required /></label>

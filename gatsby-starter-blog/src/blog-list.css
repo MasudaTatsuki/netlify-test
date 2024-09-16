@@ -1,0 +1,16 @@
+.blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .blog-item {
+    margin-bottom: 2rem;
+  }
+  
+  .blog-image {
+    max-width: 100%; /* 画像を親要素の幅に合わせてリサイズ */
+    height: auto;    /* 高さを自動で調整 */
+    display: block;  /* 画像の下に余白ができないようにする */
+  }
+  

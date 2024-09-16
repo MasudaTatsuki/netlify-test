@@ -10,11 +10,6 @@ const NewsList = () => {
         nodes {
           id
           title
-          eyecatch {
-            url
-            width
-            height
-          }
           text
           publishedAt(formatString: "YYYY.DD.MM hh:mm") 
         }
@@ -28,13 +23,13 @@ const NewsList = () => {
       <ul>
         {data.allMicrocmsNews.nodes.map(news => (
           <li key={news.id}>
-            {news.eyecatch && news.eyecatch.url && (
+            {/* {news.eyecatch && news.eyecatch.url && (
               <img
                 src={news.eyecatch.url}
                 alt={news.title}
                 style={{ width: news.eyecatch.width, height: news.eyecatch.height }}
               />
-            )}
+            )} */}
             <h2>{news.title}</h2>
             <p>{news.text}</p>
             <p>{news.publishedAt}</p>

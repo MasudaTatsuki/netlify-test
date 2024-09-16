@@ -13,11 +13,6 @@ const BlogList = () => {
           id
           title
           content
-          eyecatch {
-            url
-            width
-            height
-          }
           category {
             name
           }
@@ -33,13 +28,13 @@ const BlogList = () => {
       <ul className="blog-list">
         {data.allMicrocmsBlogs.nodes.map(blog => (
           <li key={blog.id} className="blog-item">
-            {blog.eyecatch && blog.eyecatch.url && (
+            {/* {blog.eyecatch && blog.eyecatch.url && (
               <img
                 src={blog.eyecatch.url}
                 alt={blog.title}
                 className="blog-image" 
               />
-            )}
+            )} */}
             <h2>{blog.title}</h2>
             <div
               dangerouslySetInnerHTML={{ __html: blog.content }}

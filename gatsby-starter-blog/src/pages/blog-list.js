@@ -8,7 +8,7 @@ const BlogList = () => {
   // GraphQLクエリを使用してデータを取得
   const data = useStaticQuery(graphql`
     query {
-      allMicrocmsBlogs {
+      allMicrocmsBlogs(sort: { fields: publishedAt, order: DESC }) {
         nodes {
           id
           title

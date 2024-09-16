@@ -6,7 +6,7 @@ const NewsList = () => {
   // GraphQLクエリを使用してデータを取得
   const data = useStaticQuery(graphql`
     query {
-      allMicrocmsNews {
+      allMicrocmsNews(sort: { fields: publishedAt, order: DESC }) {
         nodes {
           id
           title

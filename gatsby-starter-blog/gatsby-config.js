@@ -137,5 +137,6 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-postcss',
   ],
 }

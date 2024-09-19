@@ -31,7 +31,9 @@ const NewsList = () => {
               />
             )} */}
             <h2>{news.title}</h2>
-            <p>{news.text}</p>
+            <div
+              dangerouslySetInnerHTML={{ __html: news.text }}
+            />  
             <p>{news.publishedAt}</p>
           </li>
         ))}

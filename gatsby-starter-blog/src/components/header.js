@@ -11,6 +11,7 @@ const Header = () => {
           <li><Link to="/news-list">お知らせ一覧</Link></li>
           <li><Link to="/philosophy">企業理念</Link></li>
           <li><Link to="/contact">お問合せ</Link></li>
+          <li><Link to="/skill-sheet">スキルシート</Link></li>
         </ul>
       </nav>
     </header>

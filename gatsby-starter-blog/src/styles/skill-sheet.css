@@ -1,0 +1,6 @@
+.skill-sheet-table1 {
+    float: left;
+    border-collapse: collapse;
+    border:1px solid #333;
+    margin-bottom: 0 !important;
+}

@@ -7,6 +7,7 @@ const SkillSheet = () => {
   return (
     <Layout>
       <h1>スキルシート</h1>
+      <h3 className='update-date'>更新日: 2024年9月22日</h3>
       <div className='skill-sheet-table1'>
         <table>
             <tbody>
@@ -21,7 +22,12 @@ const SkillSheet = () => {
                 <tr><th>ポートフォリオ</th><td></td></tr>
             </tbody>
         </table>
-        
+        <table>
+            <tbody>
+                <tr><th>最終学歴</th><td>高卒</td></tr>
+                <tr><th>最寄駅</th><td>総武線　東中野駅</td></tr>
+            </tbody>
+        </table>
       </div>
       
     </Layout>
